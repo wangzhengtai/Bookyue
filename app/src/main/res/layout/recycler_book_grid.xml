@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/recycler_book_grid"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    tools:ignore="UseCompoundDrawables">
+
+    <com.example.bookyue.view.LabelImageView
+        android:id="@+id/grid_book_cover"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:contentDescription="@string/book_cover"
+        android:src="@drawable/book_cover"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/grid_book_title"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:paddingTop="5dp"
+        android:text="@string/bookshelf"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

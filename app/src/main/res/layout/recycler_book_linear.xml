@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/recycler_book_linear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <com.example.bookyue.view.LabelImageView
+        android:id="@+id/linear_book_cover"
+        android:layout_width="48dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/book_cover"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/book_cover" />
+
+    <TextView
+        android:id="@+id/linear_book_title"
+        android:layout_toEndOf="@id/linear_book_cover"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:textSize="16sp"
+        android:gravity="bottom"
+        android:paddingBottom="2dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/linear_book_lastChapter"
+        android:layout_below="@id/linear_book_title"
+        android:layout_toEndOf="@id/linear_book_cover"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:singleLine="true"
+        android:gravity="top"
+        android:paddingTop="2dp"/>
+
+    <View
+        android:layout_toEndOf="@id/linear_book_cover"
+        android:layout_below="@id/linear_book_lastChapter"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+</RelativeLayout>
