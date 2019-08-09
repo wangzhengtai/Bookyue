@@ -4,7 +4,7 @@
 
 书悦——小说阅读器！
 
-<div>
+<div align=center>
   <img src="images/gifhome_640x1137_8s.gif" width="270" height="480">
   <img src="images/gifhome_640x1137_7s.gif" width="270" height="480">
   <img src="images/gifhome_640x1137_9s.gif" width="270" height="480">
@@ -155,7 +155,7 @@ MVP呢？就是**将UI逻辑抽象到View接口层，将业务逻辑抽象到Pre
 
   但如果是多个连在一起的字符，比如……或者。”这样的，硬塞给上一行就极其别扭了，就如同下图这样！
 
-<div>
+<div align=center>
   <img src="images/S90716-162930.jpg" width="270" height="480">
   <img src="images/S90716-163034.jpg" width="270" height="480">
   <img src="images/S90716-163053.jpg" width="270" height="480">
