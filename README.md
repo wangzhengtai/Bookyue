@@ -147,7 +147,7 @@ MVP呢？就是**将UI逻辑抽象到View接口层，将业务逻辑抽象到Pre
 
   由于标点不能出现在行首，所以将其移到了上一行尾部，由于有着左右内间距的，而且比标点字符是紧挨着上一个字符的，所以如果单纯的硬添一个标点字符是没什么问题的，如下图！注意行尾！
 
-<div style = "text-align:center;">
+<div align=center>
   <img src="images/S90716-162856.jpg" width="270" height="480">
 </div>
 
