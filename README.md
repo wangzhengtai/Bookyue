@@ -4,9 +4,11 @@
 
 书悦——小说阅读器！
 
-<img src="images/gifhome_640x1137_8s.gif" width="270" height="480">
-    <img src="images/gifhome_640x1137_7s.gif" width="270" height="480">
-    <img src="images/gifhome_640x1137_9s.gif" width="270" height="480">
+  <img src="images/gifhome_640x1137_8s.gif" width="270" height="480">
+
+  <img src="images/gifhome_640x1137_7s.gif" width="270" height="480">
+
+  <img src="images/gifhome_640x1137_9s.gif" width="270" height="480">
 
 此项目尚未完全完成，目前主要只是实现了书籍的阅读功能，其他细节有待后续开发及优化！（数据来源于第三方的api，因为是第三方的api，所以关于网络请求的接口部分就没有上传了）
 
