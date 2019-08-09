@@ -24,7 +24,7 @@
 
 最终仔细思考，敲定了思路！
 
-**自定义两个View，一个继承ViewGroup，所有的事件都交给它处理，即[ReadView](view/ReadView)；一个继承View，单纯的绘制文字展示，不处理任何事件，即[PageView](view/PageView)。**
+**自定义两个View，一个继承ViewGroup，所有的事件都交给它处理，即[ReadView](blob/master/app/src/main/java/com/example/bookyue/view/ReadView.java)；一个继承View，单纯的绘制文字展示，不处理任何事件，即[PageView](blob/master/app/src/main/java/com/example/bookyue/view/PageView.java)。**
 
 自定义View的好处，此时就显示出来了，拥有极高的可扩展性，小说有着上下翻页，左右翻页，覆盖翻页，以及仿真翻页等不同的滑动效果，通过自定义View都可实现，且可整合到一起，如果是用系统自带的View控件，也可实现某一翻页效果，比如用RecyclerView或者ViewPage，但效果都并不是很好，且单一，毕竟这些不是用来特意为小说阅读实现的控件！还有就是页面内容的展示，此时的系统控件就完全不能符合要求了，唯有自定义控件！
 
