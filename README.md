@@ -91,7 +91,9 @@ MVP呢？就是**将UI逻辑抽象到View接口层，将业务逻辑抽象到Pre
 
   小说当前的翻页模式是覆盖翻页的，如图！
 
+ <div align=center>
   <img src="images/S90809-132950.jpg" width="270" height="480">
+ </div>
 
   我是自定义一个View让其继承ViewGroup，在里面加载了三个子View，布局方面让其覆盖式放置，想通子View的scrollerTo()来达到滚动的效果！因为**scrollerTo()滚动的只是视图，并没有移动View！scrollerTo()滚动的只是视图，并没有移动View！scrollerTo()滚动的只是视图，并没有移动View！**
 
@@ -153,15 +155,15 @@ MVP呢？就是**将UI逻辑抽象到View接口层，将业务逻辑抽象到Pre
 
   但如果是多个连在一起的字符，比如……或者。”这样的，硬塞给上一行就极其别扭了，就如同下图这样！
 
-<div style = "text-align:center;">
+<div align=center>
   <img src="images/S90716-162930.jpg" width="270" height="480">
 </div>
 
-<div style = "text-align:center;">
+<div align=center>
   <img src="images/S90716-163034.jpg" width="270" height="480">
 </div>
 
-<div style = "text-align:center;">
+<div align=center>
   <img src="images/S90716-163053.jpg" width="270" height="480">
 </div>
 
@@ -169,7 +171,7 @@ MVP呢？就是**将UI逻辑抽象到View接口层，将业务逻辑抽象到Pre
 
   观察了一下QQ浏览器上小说书架的部分，发现其每行都是十六个字符，而且标点不会出现在行首，但仔细观察发现虽然每行都是十六个字符，但行与行之间的字符是不对齐的，我的页面上的字符都是都是正对齐的，而QQ浏览器的书架页面有时会出现一个字符是在上一行的两个字符之间的情况，即偏移了！我有理由怀疑，它是将字符与字符之间的间距给挤出来让给了行尾标点！
 
-<div style = "text-align:center;">
+<div align=center>
   <img src="images/S90716-170537.jpg" width="270" height="480">
 </div>
 
@@ -179,7 +181,7 @@ MVP呢？就是**将UI逻辑抽象到View接口层，将业务逻辑抽象到Pre
 
   如果在快速的点击翻页的话，就会出现之前页面停留在之间的问题！如下图！
 
-<div style = "text-align:center;">
+<div align=center>
   <img src="images/gifhome_640x1137_5s.gif" width="270" height="480">
 </div>
 
