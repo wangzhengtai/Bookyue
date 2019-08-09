@@ -4,11 +4,9 @@
 
 书悦——小说阅读器！
 
-<div>
-    <img src="images/gifhome_640x1137_8s.gif" width="360" height="640">
-    <img src="images/gifhome_640x1137_7s.gif" width="360" height="640">
-    <img src="images/gifhome_640x1137_9s.gif" width="360" height="640">
-</div>
+<img src="images/gifhome_640x1137_8s.gif" width="270" height="480">
+    <img src="images/gifhome_640x1137_7s.gif" width="270" height="480">
+    <img src="images/gifhome_640x1137_9s.gif" width="270" height="480">
 
 此项目尚未完全完成，目前主要只是实现了书籍的阅读功能，其他细节有待后续开发及优化！（数据来源于第三方的api，因为是第三方的api，所以关于网络请求的接口部分就没有上传了）
 
@@ -91,7 +89,7 @@ MVP呢？就是**将UI逻辑抽象到View接口层，将业务逻辑抽象到Pre
 
   小说当前的翻页模式是覆盖翻页的，如图！
 
-  <img src="images/S90809-132950.jpg" width="360" height="640">
+  <img src="images/S90809-132950.jpg" width="270" height="480">
 
   我是自定义一个View让其继承ViewGroup，在里面加载了三个子View，布局方面让其覆盖式放置，想通子View的scrollerTo()来达到滚动的效果！因为**scrollerTo()滚动的只是视图，并没有移动View！scrollerTo()滚动的只是视图，并没有移动View！scrollerTo()滚动的只是视图，并没有移动View！**
 
@@ -147,21 +145,21 @@ MVP呢？就是**将UI逻辑抽象到View接口层，将业务逻辑抽象到Pre
 
   由于标点不能出现在行首，所以将其移到了上一行尾部，由于有着左右内间距的，而且比标点字符是紧挨着上一个字符的，所以如果单纯的硬添一个标点字符是没什么问题的，如下图！注意行尾！
 
-  <img src="images/S90716-162856.jpg" width="360" height="640">
+  <img src="images/S90716-162856.jpg" width="270" height="480">
 
   但如果是多个连在一起的字符，比如……或者。”这样的，硬塞给上一行就极其别扭了，就如同下图这样！
 
-  <img src="images/S90716-162930.jpg" width="360" height="640">
+  <img src="images/S90716-162930.jpg" width="270" height="480">
 
-  <img src="images/S90716-163034.jpg" width="360" height="640">
+  <img src="images/S90716-163034.jpg" width="270" height="480">
 
-  <img src="images/S90716-163053.jpg" width="360" height="640">
+  <img src="images/S90716-163053.jpg" width="270" height="480">
 
   前移？挪出空间来？可是字符都是一个一个的从头开始绘制的，从哪里挤出地方给多出来的标点？
 
   观察了一下QQ浏览器上小说书架的部分，发现其每行都是十六个字符，而且标点不会出现在行首，但仔细观察发现虽然每行都是十六个字符，但行与行之间的字符是不对齐的，我的页面上的字符都是都是正对齐的，而QQ浏览器的书架页面有时会出现一个字符是在上一行的两个字符之间的情况，即偏移了！我有理由怀疑，它是将字符与字符之间的间距给挤出来让给了行尾标点！
 
-  <img src="images/S90716-170537.jpg" width="360" height="640">
+  <img src="images/S90716-170537.jpg" width="270" height="480">
 
   呃，虽然我知道字符与字符之间是有间隔的？但还是不知道怎么挤的？或者还有别的办法？
 
@@ -169,7 +167,7 @@ MVP呢？就是**将UI逻辑抽象到View接口层，将业务逻辑抽象到Pre
 
   如果在快速的点击翻页的话，就会出现之前页面停留在之间的问题！如下图！
 
-  <img src="images/gifhome_640x1137_5s.gif" width="360" height="640">
+  <img src="images/gifhome_640x1137_5s.gif" width="270" height="480">
 
 * **页面左右内边距的问题**
 
@@ -185,7 +183,7 @@ MVP呢？就是**将UI逻辑抽象到View接口层，将业务逻辑抽象到Pre
 
 * **意外情况下的状态保存**
 
-###第三方开源库
+### 第三方开源库
 
 * Glide
 * Retrofit
