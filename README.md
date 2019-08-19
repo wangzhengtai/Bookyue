@@ -63,7 +63,7 @@ MVP呢？就是**将UI逻辑抽象到View接口层，将业务逻辑抽象到Pre
 
 不知道为何，写程序越来越喜欢用单例了，**如果内存中有某个类的实例存在，且类的基本是不可变的，总觉得应该直接拿内存中的实例直接用，而不是再实例化一个实例！**可这样的话，就只能把类写成单例模式了！
 
-例如，在实现自定义[PageView](View/PageView)的时候，抽取出了一个[DrawTextUtil](Util/DrawTextUtil)工具类，里面封装着绘制所用的画笔，页面边距，字体大小，行间距等诸多成员变量，这些都是绘制小说文本时所必须的，刚开始的时候我是将这些成员都直接放在[PageView](View/PageView)中的，这样的话，每次实例化[ViewPage](View/PageView)的对象的，都需要实例化一堆的成员变量，而且每次实例化ViewPage时，都会重复实例化一堆重复的东西，虽然说removeView的时候，这些就应该会被垃圾回收器回收，但肯定是需要一定时间的，而且既然内存中已存在，且没有变化，为什么要继续重复创建，所以最终将其抽取成一个工具类，使用单例模式！
+例如，在实现自定义[PageView](https://github.com/wangzhengtai/Bookyue/blob/master/app/src/main/java/com/example/bookyue/view/PageView.java)的时候，抽取出了一个[DrawTextUtil](https://github.com/wangzhengtai/Bookyue/blob/master/app/src/main/java/com/example/bookyue/util/DrawTextUtil.java)工具类，里面封装着绘制所用的画笔，页面边距，字体大小，行间距等诸多成员变量，这些都是绘制小说文本时所必须的，刚开始的时候我是将这些成员都直接放在[PageView](https://github.com/wangzhengtai/Bookyue/blob/master/app/src/main/java/com/example/bookyue/view/PageView.java)中的，这样的话，每次实例化[ViewPage](https://github.com/wangzhengtai/Bookyue/blob/master/app/src/main/java/com/example/bookyue/view/ReadView.java)的对象的，都需要实例化一堆的成员变量，而且每次实例化ViewPage时，都会重复实例化一堆重复的东西，虽然说removeView的时候，这些就应该会被垃圾回收器回收，但肯定是需要一定时间的，而且既然内存中已存在，且没有变化，为什么要继续重复创建，所以最终将其抽取成一个工具类，使用单例模式！
 
 最早接触到的模式就是单例模式，其中个人最喜欢的还是双重加载模式，从最初的不明白为什么要那样写，到知道为什么要两次判空，为什么要用volatile关键字，还有就是由类加载机制实现的单例模式，但最后了解到枚举单例是最好的，因为可以做到与序列化时仍是单例！
 
